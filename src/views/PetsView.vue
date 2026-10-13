@@ -31,6 +31,19 @@ for(const tutor of tutores.value){
 }
 return 'Ops, Tutor não encontrado'
 }
+
+
+async function excluirPet(id){
+    const confirmarExclusao = window.confirm('Deseja excluir realmente excluir o pet?');
+
+    if(confirmarExclusao){
+        //logica para excluir o pet http://localhost:3000/pets/${id}
+        await fetch(`${API_URL}/pets/${id}`,{
+            method: 'DELETE',
+        });
+        await carregarDados()
+    }
+}
 onMounted(carregarDados)
 </script>
 <template>
@@ -48,6 +61,7 @@ onMounted(carregarDados)
             <th>Nome</th>
             <th>Espécie</th>
             <th>Tutor</th>
+            <th>Ações</th>
         </thead>
         <tbody>
             <tr v-for="pet in pets" :key="pet.id">
@@ -55,6 +69,10 @@ onMounted(carregarDados)
                 <td>{{ pet.nome }}</td>
                 <td>{{ pet.especie }}</td>
                 <td>{{ nomeDoTutor(pet.tutorId) }}</td>
+                <td>
+                    <RouterLink :to="`/pets/${pet.id}`"> Visualizar</RouterLink>
+                    <button class="btn btn-danger" @click="excluirPet(pet.id)">Excluir</button>
+                </td>
             </tr>
         </tbody>
     </table>
