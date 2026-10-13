@@ -35,6 +35,12 @@
       "especie": "Coelho",
       "tutorId": "1",
       "id": "RsWWbX8pQEE"
+    },
+    {
+      "nome": "wewewewe",
+      "especie": "Tartaruga",
+      "tutorId": "2",
+      "id": "zWZBx9m8u1I"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

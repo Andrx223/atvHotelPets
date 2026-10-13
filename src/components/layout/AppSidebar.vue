@@ -33,11 +33,17 @@ import { RouterLink } from 'vue-router';
         class="nav-link text-body-secondary"
         aria-disabled="true"
       >
+      <RouterLink
+       to="/tutores"
+       class="nav-link"
+       active-class="active">
+      
         <i
           class="bi bi-people me-2"
           aria-hidden="true"
         ></i>
-        Tutores <small class="ms-1">(em breve)</small>
+        Tutores 
+      </RouterLink>
       </span>
     </div>
   </nav>
