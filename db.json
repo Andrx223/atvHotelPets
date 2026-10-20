@@ -3,17 +3,37 @@
     {
       "id": "1",
       "nome": "Ana",
-      "telefone": "47999990000"
+      "telefone": "47999990000",
+      "cpf": "097.098.097-98",
+      "email": "anatutora@gmail.com"
     },
     {
       "id": "2",
       "nome": "Carlos",
-      "telefone": "47988880000"
+      "telefone": "47988880000",
+      "cpf": "047.088.247-08",
+      "email": "carlostutora@gmail.com"
     },
     {
       "nome": "Cecília Lopes Truppel",
       "telefone": "08007708900",
-      "id": "lZtY79ERKRc"
+      "id": "lZtY79ERKRc",
+      "cpf": "987.123.337-77",
+      "email": "ceciliatutora@gmail.com"
+    },
+    {
+      "nome": "Kika",
+      "telefone": "69696969696",
+      "id": "APlH3Vd2XCs",
+      "cpf": "089.098.089-89",
+      "email": "kikaprofessoradedanca@gmail.com"
+    },
+    {
+      "nome": "Kika Loves Marion",
+      "telefone": "98989899898",
+      "id": "JVSHdFJq_24",
+      "email": "kikaloves@gmail.com",
+      "cpf": "765.987.098-89"
     }
   ],
   "pets": [
@@ -42,10 +62,10 @@
       "id": "RsWWbX8pQEE"
     },
     {
-      "nome": "wewewewe",
-      "especie": "Tartaruga",
-      "tutorId": "2",
-      "id": "zWZBx9m8u1I"
+      "nome": "kuka",
+      "especie": "Cachorro",
+      "tutorId": "APlH3Vd2XCs",
+      "id": "w7AFTITIJXU"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

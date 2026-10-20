@@ -12,7 +12,9 @@ const tutores = ref([]); //lista vazia dos meus tutores
 const novoTutor = ref({
   nome: '',
   telefone: '',
-  id: ''
+  id: '',
+  email: '',
+  cpf: ''
 });
 
 //buscar todos os tutores da minha aplicação salvos
@@ -73,6 +75,7 @@ onMounted(carregarTutores);
           id="nome"
           v-model="novoTutor.nome"
           required
+          placeholder="Nome Sobrenome"
         />
       </div>
       <!-- telefone do tutor -->
@@ -89,12 +92,46 @@ onMounted(carregarTutores);
           id="nome"
           v-model="novoTutor.telefone"
           required
+          placeholder="0000000000"
         />
       </div>
-     
+      <!-- cpf -->
+      <div class="col-md-">
+        <label
+          for="nome"
+          class="form-label"
+        >
+          CPF do tutor:
+        </label>
+        <input
+          type="text"
+          class="form-control"
+          id="nome"
+          v-model="novoTutor.cpf"
+          required
+          placeholder="000.000.000-00"
+        />
+      </div>
 
+      <!-- email -->
+        <div class="col-md-">
+        <label
+          for="nome"
+          class="form-label"
+        >
+          Email do Tutor:
+        </label>
+        <input
+          type="text"
+          class="form-control"
+          id="nome"
+          v-model="novoTutor.email"
+          required
+          placeholder="seuemail@gmail.com"
+        />
+      </div>
       <div class="col-12 d-flex gap-2">
-        <button class="btn btn-success">Salvar Tutor</button>
+        <button class="btn btn-success">Salvar </button>
       </div>
     </form>
     <!-- fazer post dos tutores nome email e telefone -->
